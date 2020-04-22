@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+
+    <diskStore path="user.home/springbest-cache"/>
+
+    <defaultCache
+            eternal="true"
+            maxElementsInMemory="10000"
+            overflowToDisk="true"
+    />
+
+    <cache
+            name="user"
+            eternal="true"
+            maxElementsInMemory="10000"
+            overflowToDisk="true" />
+
+
+</ehcache>
