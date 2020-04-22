@@ -1,5 +1,6 @@
 package com.jian.exceptioninfo;
 
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 

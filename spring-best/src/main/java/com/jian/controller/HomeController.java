@@ -12,11 +12,17 @@ public class HomeController {
 
     @RequestMapping(value = "home",method = RequestMethod.GET)
     public String home() {
-        if (true) {
-            throw new DuplicateException();
-        }
         return "home";
     }
 
+    @RequestMapping(value = "notfind",method = RequestMethod.GET)
+    public String notFindPage() {
+        throw new NotFindException();
+    }
+
+    @RequestMapping(value = "dual",method = RequestMethod.GET)
+    public String dupl() {
+        throw new DuplicateException();
+    }
 
 }
